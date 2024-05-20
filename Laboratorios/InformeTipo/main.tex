@@ -1,0 +1,127 @@
+\documentclass[letter,12pt]{article}
+\usepackage[paperheight=27.94cm,paperwidth=21.59cm,bindingoffset=0in,left=3cm,right=2.0cm, top=3.5cm,bottom=2.5cm, headheight=200pt, headsep=1.0\baselineskip]{geometry}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{pdfpages}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{indentfirst}
+\usepackage{mdframed}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{siunitx}
+\renewcommand{\tablename}{Tabla}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\parindent}{1cm}
+
+\begin{document}
+
+\lhead{\begin{picture}(0,0) \put(0,0){\includegraphics[width=40mm]{Images/Universidad Logo.png}} \end{picture}}
+\begin{figure}[t]
+\includegraphics[width=8cm]{Images/Universidad Logo.png}
+\centering
+\end{figure}
+
+    \title{\Huge{Estructura de Datos: Laboratorio x}}
+
+    \author{Nombre(s) Estudiante(s)\\Profesor: Nombre Apellido\\Ayudante: Nombre Apellido\\Sección x}
+
+    \date{(dia) de (mes) (año)}
+
+\maketitle
+
+\newpage
+    \tableofcontents
+\newpage
+
+\section{Introduction}
+
+En esta parte se debe señalar qué se hará en forma de resumen e información importante para dar un buen contexto a lo siguiente.
+
+También se deben señalar las tecnologías/materiales a utilizar en el desarrollo. En este caso por ejemplo nombrar que se programará en el lenguaje Java y se trabajará con estructuras como LinkedList o similares, etc.
+
+\newpage
+
+\section{Desarrollo}
+
+En el desarrollo se debe mostrar todo el procedimiento realizado para llegar al objetivo de cada actividad, explicar cada código y porqué tu codigo cumple con cada objetivo.
+
+Lo óptimo es detallar cada ítem demostrando el código o utilizando imagenes, y lo escrito debe ser no demasiado extenso ya que esto debe ir al grano pero explicandolo de la mejor manera (se entiende según el tema que algunas explicaciones/textos serán largos).
+
+\subsection{Subsecciones}
+
+La utilización se subsecciones para distribuir el tema y marcar los cambios es muy recomendable, de esta manera se notan de mejor manera los distintos temas que puede tocar el desarrollo o las diferentes etapas por las que pasó el trabajo de los objetivos.
+
+\subsection{Ejemplo de inserción de imagen}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Images/Universidad Logo.png}
+    \caption{Ejemplo de inserción de imagen}
+\end{figure}
+
+\newpage
+
+\section{Análisis}
+
+En esta sección se debe análizar profundamente lo visto en el desarrollo, no en todos los informes aplica este apartado, normalmente existe en informes que realicen comparaciones o toma de muestras, etc.
+
+Se aplicar para dar detalles de resultados o hacer comparaciones a través de gráficos o tablas, y sus explicaciones deben ser detalladas.
+
+\subsection{Ejemplo de tabla}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Tiempos 1 & Tiempos 2 &  \\ \hline
+5 minutos y 48 segundos   & 4 minutos y 34 segundos & Función 1 \\ \hline
+1 minuto y 42 segundos & 1 minuto y 39 segundos & Función 2 \\ \hline
+18 segundos y 708 milisegundos & 27 segundos y 084 milisegundos & Función 3 \\ \hline
+\end{tabular}
+\caption{Ejemplo de tabla}
+\end{table}
+
+\subsection{Ejemplo de gráfico}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=10,
+    xlabel={Datos},
+    ylabel={Tiempo (segundos)},
+    symbolic x coords={'Tiempos 1', 'Tiempos 2'},
+    xtick=data,
+    x tick label style={rotate=45,anchor=east},
+    enlarge x limits=0.5,
+    ]
+    
+    \addplot coordinates {('Tiempos 1', 4.215) ('Tiempos 2', 40.197)};
+    
+\end{axis}
+\end{tikzpicture}
+\caption{Ejemplo de gráfico}
+\label{fig:barras_milisegundos}
+\end{figure}
+
+\newpage
+
+\section{Conclusión}
+
+Se realiza un mini-resumen de lo realizado en las actividades, su desarrollo y los resultados (y opiniones sobre estas), si eran lo esperado o no, etc. También se señalan conocimientos nuevos gracias a la experiencia u comentarios de esta.
+
+\end{document}
