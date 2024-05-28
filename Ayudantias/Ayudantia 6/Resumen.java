@@ -43,7 +43,7 @@ El mismo arreglo A ordenado de forma ascendente, es decir, A1 <= A2 <= A3 <= ...
 * Tiempo de ejecucion:  O(n2)       orden inverso
                         omega(n)    ordenado
                         Inplace
-                        No Estable
+                        Estable
 */
 
 /* Merge sort
